@@ -1,13 +1,66 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .bg_purple {
-    background: #bd3cbd ;
+  background: #bd3cbd;
 }
 
 #ds {
-    background-color: black;
-    color: #FFF
+  background-color: black;
+  color: #fff;
+}
+
+header {
+  background-color: #bd3cbd;
+  height: 80px;
+}
+
+.logo {
+  background-color: #5e81fe;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
+  color: #fff;
+  margin-right: 73px;
+}
+
+section {
+  display: flex;
+  max-width: 788px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.menu_flex {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 22px;
+}
+
+#btn_get_start {
+  margin-left: 20px;
+}
+.nav_socio ul li {
+  margin-left: 15px;
+}
+
+ul a {
+    text-decoration: none;
 }

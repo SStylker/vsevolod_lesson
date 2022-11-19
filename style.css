@@ -14,7 +14,6 @@
 }
 
 header {
-  background-color: #bd3cbd;
   height: 80px;
 }
 
@@ -36,6 +35,7 @@ section {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 0 30px;
 }
 
 ul {
@@ -44,6 +44,7 @@ ul {
   align-items: center;
   list-style: none;
   height: 100%;
+
 }
 
 .menu_flex {
@@ -52,10 +53,55 @@ ul {
 
 nav ul li {
   margin-right: 22px;
+ 
+}
+
+nav ul li:hover {
+  background:#fff ;
+
+}
+
+
+
+nav ul li a{ 
+  color: #697CA6;
+}
+
+nav ul li:hover a {
+  color: #000000;
+
+}
+
+nav ul li a:active {
+  color: #ff0000;
+
+}
+
+nav ul li a:focus {
+  color: #00ff22;
 }
 
 #btn_get_start {
   margin-left: 20px;
+  background: #D2E1FF;
+  border-radius: 2px;
+  padding: 13px 16px;
+  border: none;
+  color: #3A79FF;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  opacity: 1 ;
+  transition: all 0.3s;
+  white-space: nowrap;
+
+} 
+#btn_get_start:hover {
+  background-color: #000;
+  color: #fff;
+  
+  
 }
 .nav_socio ul li {
   margin-left: 15px;
@@ -63,4 +109,58 @@ nav ul li {
 
 ul a {
     text-decoration: none;
+}
+.humgur {
+  display: none;
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.humgur .bar {
+  width: 100%;
+  height: 3px;
+
+  background: #000;
+}
+
+
+
+
+@media (max-width:800px) {
+  .nav_socio {
+    display: none;
+
+  }
+  #btn_get_start{
+    margin-left:  0;
+  }
+  
+}
+@media (max-width:665px) {
+  nav{
+    display: none;
+  }
+  .humgur {
+    display: flex;
+  } 
+
+  .logo {
+    margin-right: 0;
+  }
+
+  section .menu_flex:first-child {
+    flex-grow: 1;
+  }
+
+  .menu_flex .logo {
+    order: 2;
+    margin-left: 50px;
+  }
+  .menu_flex .humgur {
+    order: 1;
+  }
+
+
 }
